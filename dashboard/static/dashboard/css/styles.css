@@ -1,0 +1,21 @@
+.chart{
+    height: 400px;
+}
+
+.container{
+    margin: 0;
+    width: 100%;
+}
+
+body{
+    background: #d6d8e0;
+}
+
+.card-title{
+    font-weight: bold !important;
+    color: #3e495f;
+}
+
+.nav-wrapper{
+    padding-left: 20px;
+}

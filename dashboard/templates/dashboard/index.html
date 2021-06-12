@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="{% static 'dashboard/js/d3.v6.min.js' %}"></script>
+    <script src="{% static 'dashboard/js/plotly-2.0.0.min.js' %}"></script>
+    <link type="text/css" rel="stylesheet" href="{% static 'dashboard/css/materialize.min.css' %}"
+          media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="{% static 'dashboard/css/styles.css' %}" media="screen,projection"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<nav>
+    <div class="nav-wrapper blue-grey lighten-3">
+        <a href="#" class="brand-logo">✔ TimePlayer</a>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <div class="card white">
+                <div class="card-content">
+                    <span class="card-title">Рейтинг участников чата</span>
+                    <div id="chart_rating" class="chart"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m12 l6">
+            <div class="card white">
+                <div class="card-content">
+                    <span class="card-title">Проекты занятия "Кодинг" пользователя andrey_bashtovoy</span>
+                    <div id="chart_pie" class="chart"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m12 l6">
+            <div class="card white">
+                <div class="card-content">
+                    <span class="card-title">Время, уделенное всем занятиям пользователя andrey_bashtovoy</span>
+                    <div id="chart_activities" class="chart"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12">
+            <div class="card white">
+                <div class="card-content">
+                    <span class="card-title">Распределение продолжительности сна пользователя andrey_bashtovoy</span>
+                    <div id="chart_sleep" class="chart"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<script src="{% static 'dashboard/js/materialize.min.js' %}"></script>
+<script src="{% static 'dashboard/js/charts.js' %}"></script>
+</body>
+</html>
